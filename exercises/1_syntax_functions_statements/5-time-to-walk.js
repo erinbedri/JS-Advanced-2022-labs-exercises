@@ -8,9 +8,9 @@ function solve(steps, footprint, speed) {
     let minutes = Math.floor(timeSeconds / 60);
     let seconds = Math.ceil(timeSeconds % 60);
 
-    const zeroPad = (num, places) => String(num).padStart(places, '0')
+    const zeroPad = (num, places) => String(num).padStart(places, '0');
 
-    console.log(`${zeroPad(hours, 2)}:${zeroPad(minutes, 2)}:${zeroPad(seconds, 2)}`)
+    console.log(`${zeroPad(hours, 2)}:${zeroPad(minutes, 2)}:${zeroPad(seconds, 2)}`);
 }
 
 solve(2564, 0.70, 5.5);
