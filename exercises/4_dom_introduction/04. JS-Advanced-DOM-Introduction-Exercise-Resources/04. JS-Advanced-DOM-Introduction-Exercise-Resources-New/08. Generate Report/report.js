@@ -2,12 +2,8 @@ function generateReport() {
 
     let inputElements = Array.from(document.getElementsByTagName('input'));
 
-    //console.log(inputElements)
-
     const resultArr = [];
     let tableRows = Array.from(document.getElementsByTagName('tr'));
-
-    //console.log(tableRows)
 
     const checkedCols = [];
 
@@ -23,7 +19,7 @@ function generateReport() {
                 }
                 continue;
             }
-
+            
             if (checkedCols.includes(y)) {
                 let propertyName = inputElements[y].name;
                 obj[propertyName] = element.textContent;
