@@ -42,7 +42,7 @@ function factory(requirements) {
         carriage: createCarriage(requirements.carriage, requirements.color),
         wheels: createWheels(requirements.wheelsize),
     }
-};
+}
 
 let input = {
     model: 'VW Golf II',
