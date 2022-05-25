@@ -1,5 +1,10 @@
-function sum(n1, n2) {
-    return n1 + n2;
+function sum(arr) {
+    let sum = 0;
+    for (let num of arr){
+        sum += Number(num);
+    }
+    return sum;
 }
 
-moduel.exports = sum;
+
+module.exports = sum;
